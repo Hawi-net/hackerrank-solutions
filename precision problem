@@ -1,0 +1,17 @@
+def plusMinus(arr):
+    neg = 0
+    zero = 0
+    pos = 0
+    n = len(arr)
+
+    for num in arr:
+        if num < 0:
+            neg += 1
+        elif num == 0:
+            zero += 1
+        else:
+            pos += 1
+
+    print(f"{pos/n:.6f}")
+    print(f"{neg/n:.6f}")
+    print(f"{zero/n:.6f}")
